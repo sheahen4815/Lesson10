@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 public class HelloControllerUnitTests {
     @Test
-    public void testSayHell() throws Exception {
+    public void testSayHello() throws Exception {
         HelloController controller = new HelloController();
         Model model = new BindingAwareModelMap();
         String result = controller.sayHello("World", model);
@@ -19,3 +19,5 @@ public class HelloControllerUnitTests {
         assertEquals("hello", result);
     }
 }
+
+
